@@ -10,7 +10,7 @@ int main () {
    double us_pop = 325770032;
    double growth_constant = 2628000;
    double growth_rate = ((growth_constant) / (us_pop)); //growth rate based on on net gain of 1 person per 12 seconds (2628000, the estimated growth in one year, 
-                                                            //divided by 325770032, (2628000/325770032) current population, so roughly 0.008)
+                                                       //divided by 325770032, (2628000/325770032) current population, so roughly 0.008)
    
    cout << "How many years into the future do you want to predict? ";
    cin  >> num_years;
