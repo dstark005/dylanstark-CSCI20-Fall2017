@@ -1,3 +1,6 @@
+//Created By: Dylan Stark
+//Created On: 8/30/2017
+
 #include <iostream>
 #include <math.h>
 using namespace std;
