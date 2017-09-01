@@ -22,5 +22,7 @@ int main () {
    cout << "The estimated population of the USA " << num_years << " year(s) from 2017 is " << pop_int << ".";
    cout << endl;
    
+   // Output is "The estimated population of the USA 99 year(s) from 2017 is 721710874."
+   
    return 0;
 }
