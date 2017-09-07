@@ -6,7 +6,7 @@
  
  int main()  //   main function
  {
-     cout<<"Hello World!"<<endl;
+cout<<(7-(8-(-2)))*(-8);
  }
  
  //Identify the following parts of the program:
