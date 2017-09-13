@@ -48,7 +48,7 @@ stock_port stock1; //Creating variable for struct stock_port
     cout << stock1.name << "     " << stock1.sector << "       " << stock1.share_price << "         " << stock1.owned << "       " << (stock1.share_price * stock1.owned) << endl;
     cout << endl;
     
-    total_portfolio = (stock1.share_price * stock1.owned);
+    total_portfolio = (stock1.share_price * stock1.owned); //Portfolio output starts at 0, then goes up with each stock inputted
     
     cout << "Total Portfolio: " << total_portfolio << endl;
     cout << endl << endl;
@@ -70,7 +70,7 @@ stock_port stock1; //Creating variable for struct stock_port
     cout << stock1.name << "     " << stock1.sector << "       " << stock1.share_price << "         " << stock1.owned << "       " << (stock1.share_price * stock1.owned) << endl;
     cout << endl;
     
-    total_portfolio = total_portfolio + (stock1.share_price * stock1.owned);
+    total_portfolio = total_portfolio + (stock1.share_price * stock1.owned); //Portfolio output starts at 0, then goes up with each stock inputted
     
     cout << "Total Portfolio: " << total_portfolio << endl;
     cout << endl << endl;
@@ -91,6 +91,8 @@ stock_port stock1; //Creating variable for struct stock_port
  }
  
  /*
+ 
+ Portfolio output starts at 0, then goes up with each stock inputted
  
  Sample Output:
  
