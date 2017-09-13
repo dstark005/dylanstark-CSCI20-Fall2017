@@ -9,20 +9,24 @@ It also asks the user if they would like to enter another stock. If user chooses
 the program will run again and calculate the new total of the portfolio.
 
 */
+  #include <iostream> 
+  using namespace std; 
  
- #include <iostream> 
- using namespace std; 
- 
- int main()
- {
-
-    struct stock_port {
+     struct stock_port {
         
         string name;
         char sector;
         double share_price;
         int owned;
 };
+ 
+ 
+
+ 
+ int main()
+ {
+
+
 
     char yn = '0';
     double total_portfolio = 0.0;
@@ -33,6 +37,28 @@ stock_port stock1; //Creating variable for struct stock_port
     stock1.sector = '0';
     stock1.share_price = 0.0;
     stock1.owned = 0;
+    
+stock_port stock2; //Obj2
+
+    stock2.name = "0";
+    stock2.sector = '0';
+    stock2.share_price = 0.0;
+    stock2.owned = 0;
+    
+stock_port stock3; //Obj3
+
+    stock3.name = "0";
+    stock3.sector = '0';
+    stock3.share_price = 0.0;
+    stock3.owned = 0;
+    
+stock_port stock4; //Obj4
+
+    stock4.name = "0";
+    stock4.sector = '0';
+    stock4.share_price = 0.0;
+    stock4.owned = 0;
+
     
 
  
