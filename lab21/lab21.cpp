@@ -35,7 +35,7 @@ int main()
     cout << "What is the windspeed(mph)? ";
     cin >> wspeed;
     
-    old_formula = 0.081*(3.71*(sqrt(wspeed)) + 5.81 - 0.25 * wspeed)*(temp - 91.4) + 91.4;
+    old_formula = 0.081*(3.71*(sqrt(wspeed)) + 5.81 - 0.25 * wspeed)*(temp - 91.4) + 91.4; //Formulas
     
     new_formula = 35.74 + 0.6215 * temp - 35.75*(pow(wspeed, 0.16)) + 0.4275 * temp *(pow(wspeed, 0.16));
     
