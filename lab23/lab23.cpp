@@ -16,7 +16,7 @@ between those two values, and outputs that value to the user.
 using namespace std;
 
 
-int swap (int& r_num, int& r_num2){ //function swaps values of the two variables
+int Swap (int& r_num, int& r_num2){ //function swaps values of the two variables
     
     int r_num12 = r_num;
     r_num = r_num2;
@@ -25,9 +25,13 @@ int swap (int& r_num, int& r_num2){ //function swaps values of the two variables
 }
 
 
-int rand_num (int r_num, int r_num2) { // random number generator function
+int randNum (int r_num, int r_num2) { // random number generator function
+
+     Swap(r_num, r_num2); //call swap
 
   if (r_num > r_num2){
+      
+     
       
       srand (time(NULL));
     int i_secret = 0;
@@ -45,17 +49,16 @@ int rand_num (int r_num, int r_num2) { // random number generator function
 
 int main ()
 {
-    int r_num;
-    int r_num2;
+    int r_num = 0;
+    int r_num2 = 0;
     
     
      cout << "What is a random number?(Smallest first): ";
      cin >> r_num;
      cout << "What is a second random number?(Largest): ";
      cin >> r_num2;
-     swap(r_num, r_num2); //call swap
      cout << "Random # between " << r_num2 << " and " << r_num << " is: ";
-     cout << rand_num(r_num, r_num2);
+     cout << randNum(r_num, r_num2);
      
 
 }
